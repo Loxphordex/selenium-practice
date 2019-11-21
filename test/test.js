@@ -29,7 +29,7 @@ describe('App', async function() {
         return driver.findElement(By.css('.App'));
     });
 
-    it('correctly gets browser title', () => {
+    it('correctly gets app title', () => {
         return driver.getTitle()
             .then(title => {
                 assert.strictEqual(title, 'React App')
